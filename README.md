@@ -17,7 +17,7 @@ where
 * `width` and `height` define the size of the image
 * `palette` is the desired output palette - and array of hexadecimal colour values. eg. `[ 0xff0000, 0x000000 ]` would be red and black
 
-Return is an unsigned byte arraybuffer with the output values in consecutive r, g, b bytes per pixel.
+Return is an unsigned byte ArrayBuffer with the indexed output values in consecutive pixels, i.e. indices from the colour palette (hence these values are from 0..255 and the palette can hold a maximum of 256 colours, so that's why the unsigned byte type).
 
 This is deliberately raw and unpacked for speed reasons.
 
